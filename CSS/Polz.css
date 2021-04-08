@@ -1,0 +1,600 @@
+/*Style sheet für webseite Polzhofer*/
+/*
+* {
+	margin: 0;
+	padding: 0;
+
+}
+*/
+
+body{
+	/* background-image: url("../Bilder/Modernevilla1.jpg"); */
+	color: rgb(255,250,250);
+	font-family: 'Changa', sans-serif;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	
+}
+
+    /* @media screen and (max-width: 500px){ */
+	  /* body { */
+		  /* max-width: 50%; */
+	  /* } */
+  /* } */
+
+
+.background-slider {
+    position: absolute; 
+    top:0%;
+    left:0%;
+	right: 0%;
+    z-index: -1;
+    height:100%;
+    width:100%;
+    background-size: cover;
+    background-position: center;
+	background-color: rgba(0,0,0,0.5);
+	position: fixed;
+	/* width: 100%; */
+}
+
+/*CSS Eigenschaften für den Main-Div*/
+
+.main{
+	background-color: white;
+	border: ;
+	border-radius: ;
+	box-sizing: border-box;
+	margin-left:auto;
+	margin-right:auto;
+	width: 100%;
+	z-index: 100;
+}
+
+
+
+
+.motto{
+	font-family: font-family: 'Righteous', cursive;
+	position: absolute;
+	top: 3%;
+	right: 5%;
+	margin-right: auto;
+	margin-left: auto;
+	font-size: 2rem;
+	font-style: italic;
+	color: rgba(159,182,205,0.65);
+}
+
+.motto:hover{
+	color: black;
+}
+
+
+ @media screen and (max-width: 700px){
+	  .motto {
+		 z-index: -2;
+	  }
+  }
+
+
+ @media screen and (max-width: 800px){
+	  .motto {
+		  font-size:1rem;
+		  right: 0.5%;
+		  
+	  }
+  }
+  
+   @media screen and (max-width: 1200px){
+	  .motto {
+		  
+		  font-size:1.5rem;
+		  right: 3%;
+	  }
+  }
+  
+  
+
+
+/*--------------*/
+/*CSS Eigenschaften für die linke Spalte*/
+
+.linkeSpalte{
+	/* margin-right: 70%; */
+	border: ;
+	border-radius: 7px;
+	width: 15.75%;
+	font-size: 1.8rem;
+	color: rgb(255,250,250);
+	padding:transform: translate(-50%,-50%) 3px;
+	background-color: rgba(112,128,144,0.65);
+	position: fixed;
+	/* height: 100%; */
+}
+
+   @media screen and (max-width: 600px){
+	  .linkeSpalte {
+		  width: 13%;
+	  }
+  }
+
+
+.btn {
+  width: 75%;
+  height: 25%;
+  /* line-height: 90%; */
+  border: ;
+  margin: 20px 0;
+  position: relative;
+  font-size: 1.2rem;
+}
+
+ @media screen and (max-width: 1000px){
+	  .btn {
+		  font-size:0.5rem;
+		 margin-left: -2rem;
+	  }
+  }
+  
+   @media screen and (max-width: 1200px){
+	  .btn a {
+		  font-size: 0.8rem;
+		  
+	  }
+  }
+  
+   @media screen and (max-width: 600px){
+	  .btn a {
+		  font-size: 0.3rem;
+		  margin-left: -3rem;
+	  }
+  }
+ 
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500);
+.snip1189 {
+  font-family: 'Raleway', Arial, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.snip1189 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.45s ease;
+  transition: all 0.45s ease;
+}
+.snip1189 li {
+  display: inline-block;
+  list-style: outside none none;
+  margin: 0.001%;
+  padding: 0;
+}
+.snip1189 a {
+  padding: 0.5rem 0.5rem;
+  margin: 0.2rem 0;
+  display: block;
+  color: rgba(255, 255, 255,1);
+  position: relative;
+  text-decoration: none;
+}
+.snip1189 a:before,
+.snip1189 a:after {
+  height: 10px;
+  width: 14px;
+  position: absolute;
+  content: '';
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+  opacity: 0;
+}
+.snip1189 a:before {
+  left: 0;
+  top: 0;
+  border-left: 3px solid rgb(0,0,205);
+  border-top: 3px solid rgb(0,0,205);
+  -webkit-transform: translate(100%, 50%);
+  transform: translate(100%, 50%);
+}
+.snip1189 a:after {
+  right: 0;
+  bottom: 0;
+  border-right: 3px solid rgb(0,0,205);
+  border-bottom: 3px solid rgb(0,0,205);
+  -webkit-transform: translate(-100%, -50%);
+  transform: translate(-100%, -50%);
+}
+
+
+
+.snip1189 a:hover,
+.snip1189 .current a {
+  color: rgb(255,255,255);
+}
+.snip1189 a:hover:before,
+.snip1189 .current a:before,
+.snip1189 a:hover:after,
+.snip1189 .current a:after {
+	/* border-left: 3px solid rgb(0,0,205); */
+	/* border-top: 3px solid rgb(0,0,205); */
+  -webkit-transform: translate(0%, 0%);
+  transform: translate(0%, 0%);
+  opacity: 1;
+}
+
+
+
+
+
+
+
+.link{
+	color: white;
+	box-sizing: border-box;
+	/* transform: translate(+50%,+50%); */
+	margin: auto;
+}
+
+
+
+
+.link:hover{color: ;}
+
+
+a:link{text-decoration:none;}
+
+.linkeSpalte ul{list-style-type: none;}
+
+    @media screen and (max-width: 500px){
+	  .link {
+		  font-size:0.5rem;
+	  }
+  }
+
+ @media screen and (max-width: 800px){
+	  .link {
+		  font-size:0.75rem;
+	  }
+  }
+  
+   @media screen and (max-width: 1000px){
+	  .link {
+		  font-size:2rem;
+	  }
+  }
+       @media screen and (max-width: 500px){
+	  .current {
+		  font-size:0.5rem;
+	  }
+  }
+   @media screen and (max-width: 800px){
+	  .current {
+		  font-size: 0.85rem;
+	  }
+  } 
+  
+    @media screen and (max-width: 1000px){
+	  .current {
+		  font-size:2rem;
+	  }
+  }
+  
+ 
+
+  
+   @media screen and (max-width: 1000px){
+	  .snip1189 a {
+		padding: ;
+	  }
+  }
+  
+  
+
+/*--------------*/
+/*CSS Eigenschaften für die rechte Spalte*/
+
+.rechteSpalte{
+	width: 78%;
+	position: absolute;
+	left: 18%;
+	top: 1.6%;
+	right: 4%;
+	background-color: rgba(112,128,144,0.65);
+	border-radius: 7px;
+	border: ;
+	padding-left: 1.25%;
+	padding-right: 2.5%
+	
+}
+
+ @media screen and (max-width: 800px){
+	  .rechteSpalte {
+		  max-width: 76%;
+	  }
+  }
+  
+  h1{
+	  font-size: 3rem;
+	  
+  }
+  
+      @media screen and (max-width: 1000px){
+	  h1 {
+		  font-size:2.5rem;
+	  }
+  }
+  
+      @media screen and (max-width: 600px){
+	  h1 {
+		  font-size:1.5rem;
+	  }
+  }
+  
+  
+
+
+/*--------------*/
+/* Content der Home Seite */
+
+.content{
+	/* border-bottom: 2px solid black; */
+	/* border-right: 2px solid black; */
+	
+	list-style-image: url('../Bilder/checkf.png');
+}
+
+.content1{
+	padding: 2px;
+	width: 60%;
+	
+}
+
+.content1 p{
+	font-size: 1.5rem;
+}
+
+.contentü{
+	padding: 2px;
+	width: 80%;
+	font-size: 1.2rem;
+}
+
+    @media screen and (max-width: 550px){
+	  .contentü{
+		  font-size:0.8rem;
+	  }
+  }
+
+
+    @media screen and (max-width: 1100px){
+	  .contentü h2 {
+		  font-size:1.2rem;
+	  }
+  }
+  
+     @media screen and (max-width: 500px){
+	  .contentü h2 {
+		  font-size:0.8rem;
+	  }
+  }
+
+
+
+h3{
+	font-size: 1.85rem;
+	
+}
+
+.content li{
+	font-style: italic;
+	font-size: 1.2rem;
+}
+
+.contentü p{
+	font-size: 1.5rem;
+}
+
+
+
+
+/* -------------*/
+/* Gallerie der Bauten */
+
+.bgal{
+		opacity: 0.8;
+	}  
+  
+  .bgal img{
+	  width: 150%;
+	  height: auto;
+  }
+  
+  
+     @media screen and (max-width: 1000px){
+	  .bgal {
+		  width: 200%;
+	  }
+  }
+  
+  .bgal:hover{
+	  animation-name: galanim;
+	  animation-duration: 1.7s;
+	  animation-iteration-count: 1;
+	  animation-fill-mode: forwards; 
+	  animation-timing-function: ease;
+	  z-index: 100;
+  }
+
+ @keyframes galanim{
+	  from {opacity: 0.75; transform: scale(1);}
+	  to {opacity: 1.0; transform: scale(1.85)}
+  }
+  
+  .responsive{
+	  padding: 5px;
+	  width: 20%;
+  }
+  
+
+
+/* -------------------- */
+/* Fußzeile */
+
+.foot{
+	font-size: 1.2rem;
+	border-top:2px solid white;
+	
+}
+
+a{
+	color: white;
+	
+}
+
+.foot a:hover{background-color: black; border-radius: 8px; color: white;}
+
+.foot a{color: rgb(0,0,205);}
+
+
+/* -------------------------------- */
+/* Kontakt und Impressum */
+
+.Features1{
+	  width: 50%;
+	  float: left; 
+  }
+  
+ 
+  
+  .tabim{
+		background-color: rgb(0,0,139);
+		text-align: right;
+		font-size: 1.2rem;
+		border: 1px dotted white;
+	}
+  
+  
+  #in {
+	  background-color: rgb(250,250,250); 
+	  color: rgba(0,0,0,1);
+	  border: 2px solid black;
+	  border-radius: 5px; 
+	  height: 8%;
+	  font-size: 1rem;
+	  
+  }				
+
+
+	#in:focus{background-color: rgba(0,0,0,1); color: white;}
+  
+  
+  
+  
+  
+  
+	#button{
+		color: black;
+		background-color: gray;
+		border: 2px solid black;
+		/* border-radius: 8px; */
+		height: 20%;
+		width: 19%;
+		font-size: 1.3rem;
+	}
+  
+	#button:hover{
+		color: white;
+		background-color: black;
+		border: 2px solid white;
+		
+		
+	}
+	
+	    @media screen and (max-width: 1100px){
+	  #in {
+		  font-size: 0.6rem;
+	  }
+  }
+  
+      @media screen and (max-width: 500px){
+	  #button {
+		  height: 15%;
+		  width: 18%;
+		  font-size: 0.5rem;
+	  }
+  } 
+  
+        @media screen and (max-width: 800px){
+	  #button {
+		  font-size: 0.6rem;
+	  }
+  } 
+
+
+  @media screen and (max-width: 800px){
+	  #in {
+		  font-size: 0.6rem;
+		  width: 40%;
+	  }
+  }
+  
+     	@media screen and (max-width: 1250px){
+	  #button{
+		font-size: 0.8rem;
+		
+	  }
+  }
+  
+      	@media screen and (max-width: 450px){
+	  #button{
+		font-size: 0.35rem;
+		height: 13.5%;
+		
+	  }
+  }
+
+ .Features2{
+	  width: 50%;
+	  float: right;
+  }
+  
+
+  .bundesländer{
+	  font-size: 1rem;
+	  /* position: absolute; */
+	  /* right: 23%; */
+	  
+  }
+
+  .Info-Tab1{
+	  background-color: black;
+		text-align: right;
+		font-size: 1.2rem;
+		border: 2px solid white;
+		/* color: rgb(0,0,139);  */
+		color: white;
+		
+		
+  }
+  
+  .Info-Tab2{
+		font-size: 1.2rem;
+		border: 2px solid black;
+		background-color: white;
+		color: black;
+		
+  }
+  
+  .kntk{font-size: 1.8rem; }
+
+  .kntk:hover{text-decoration: underline overline black; }
+  
+  
+
+  
