@@ -26,7 +26,7 @@ const Nav = () => {
         </div>
     )
 }
-
+//dies ist ein test kommentar
 export default Nav
 export const NavItem = props =>(
     <li>
