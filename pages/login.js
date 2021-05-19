@@ -22,11 +22,10 @@ const login = () => {
                 <label htmlFor="password" className="text-sm mb-1 mt-3">Passwort</label>
                 <input required onChange={e => setPassword(e.target.value)} type="password" name="password" placeholder="Ihr Passwort" className="w-62 border border-gray-300 px-3 py-2 rounded-lg shadow-sm focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition duration-500" />
                 <button type="submit" onClick={(e) => handleLogin(e)} className="mt-5 focus:outline-none bg-blue-600 rounded-lg text-white w-26 px-3 py-2 font-semibold cursor-pointer hover:bg-blue-500 transition duration-300">Login</button> 
-                </form> 
-
-               
-                <p className="text-sm mt-3">Sie haben noch kein Konto? <Link href="/signup"><span className="hover:text-blue-500 transition duration-300 cursor-pointer">Hier registrieren</span></Link></p>
-            </div>
+                </form>
+                <p className="text-sm mt-3">Sie haben noch kein Konto?<Link href="/signup"><span className="hover:text-blue-500 transition duration-300 cursor-pointer">Hier Registrieren</span></Link></p>
+                <a href="forgotPassword"><p>Forgot Passwort?</p></a>
+               </div>
         </div>
     )
 }
