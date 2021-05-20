@@ -1,8 +1,7 @@
 import Image from "next/image"
-
 import { useContext } from 'react'
-
 import { FireContext } from '../context/FireContext'
+import Dropdown from 'react-dropdown';
 
  
 
@@ -11,7 +10,11 @@ const Nav = () => {
     const value = useContext(FireContext)
     const {handleSignOut} = value
 
+    const options = [
+        <NavItem href="/HLF" text="HLF 3"/>, <NavItem href="/LFA" text="LFA"/>, <NavItem href="/TLFA" text="TLFA 2000"/>
+      ];
 
+     
 
     return (        
         
@@ -21,7 +24,7 @@ const Nav = () => {
                         <nav className="flex justify-between p-4 bg-red-600">
                             <a href="/"><div className="flex item-center">
                                     <Image className="justify-center" src="/Logo.png" height={30} width={30} alt="Logo FF-Laimbach am Ostrong"/>
-                                    <span className="ml-2">Feuerwehr Laimbach</span>
+                                    <span className="ml-2 text-sm font-bold text-white px-2 py-1 hover:text-gray-300 rounded transition-color duration-300">Feuerwehr Laimbach</span>
 
                                 </div>
                             </a>
@@ -32,23 +35,13 @@ const Nav = () => {
                             <NavItem href="/neues" text="News"/>
                             <NavItem href="/notfall" text="Verhalten im Notfall"/>
 
-                            {/* asdf 
-
-                                    <DropdownButton id="dropdown-basic-button" title="Something">
-                                        <Dropdown.Item href="#/ausbildung">Ausbildung</Dropdown.Item>
-                                        <Dropdown.Item href="#/mannschaft">Mannschaft</Dropdown.Item>
-                                        <Dropdown.Item href="#/geschichte">Geschichte</Dropdown.Item>
-                                    </DropdownButton>
-
-                            */}
-
+                            <Dropdown className="text-sm font-bold text-white px-2 py-1 hover:text-gray-300 rounded transition-color duration-300" options={options}  value="Fuhrpark" placeholder="Fuhrpark"  />
                             <NavItem href="/mitmachen" text="Mitmachen"/>
                             <NavItem href="/fuhrpark" text ="Fuhrpark"/>
                         
-                           <a href="/login"><svg xmlns="http://www.w3.org/2000/svg" className="h-6 text-white hover:fill-current transition duration-300"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
-  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-  </svg></a>
-                           
+                           {/*<a href="/login"><svg xmlns="http://www.w3.org/2000/svg" className="h-6 text-white hover:fill-current transition duration-300"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                            </svg></a>*/}
  
                         </ul>
                         
@@ -57,7 +50,6 @@ const Nav = () => {
         </div>
     )
 }
-//dies ist ein test kommentar
 export default Nav
 export const NavItem = props =>(
     <li>

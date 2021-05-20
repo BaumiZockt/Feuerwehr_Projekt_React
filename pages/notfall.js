@@ -2,8 +2,8 @@ import React from 'react'
 
 const Notfall = () => {
     return (
-        <div >
-            <div className="m-8 border-8 border-red-600 p-8 display: inline-block">
+        <div>
+            <div className="m-8 border-8 border-red-600 p-8 flex-row h-60">
                 <h1 className="font-semibold text-3xl">Notruf - Die W Fragen</h1>
 
                 <p>WO geschah es?</p>
@@ -14,7 +14,8 @@ const Notfall = () => {
 
 
             </div>
-            <div className="m-8 border-8 border-red-600 p-8 display: inline-block">
+            
+            <div className="m-8 border-8 border-red-600 p-8 flex-row h-60">
                 <h1 className="font-semibold text-3xl">Notruf - Nummern</h1>
 
                 <p>122 - Feuerwehr</p>
@@ -26,7 +27,7 @@ const Notfall = () => {
 
             </div>
 
-            <div className="m-8 border-8 border-red-600 p-8 display: inline-block">
+            <div className="m-8 border-8 border-red-600 p-8 flex-row">
                 <h1 className="font-semibold text-3xl">Wichtig</h1>
 
                 <p>Selbstschutz vor Retten von anderen</p>
