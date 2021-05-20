@@ -1,7 +1,7 @@
 import { createContext, useEffect , useState } from "react";
 import { auth, db } from '../config/firebase' 
 import { useRouter } from 'next/router'
-import { useHistory } from "react-router";
+import { useHistory } from "react-router-dom";
 
 
 export const FireContext = createContext()
