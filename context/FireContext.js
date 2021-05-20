@@ -40,6 +40,7 @@ export const FireProvider = ({ children }) => {
         auth.signInWithEmailAndPassword(email,password)
         .then(()=>{
             router.push("/")
+            alert("Sie wurden erfolgreich angmeldet")
         })
         .catch((err)=> {
             alert(err)
