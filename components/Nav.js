@@ -1,7 +1,7 @@
 import Image from "next/image"
 import { useContext } from 'react'
 import { FireContext } from '../context/FireContext'
-import Dropdown from 'react-dropdown';
+//import Dropdown from 'react-dropdown';
 
  
 
@@ -35,7 +35,7 @@ const Nav = () => {
                             <NavItem href="/neues" text="News"/>
                             <NavItem href="/notfall" text="Verhalten im Notfall"/>
 
-                            <Dropdown className="text-sm font-bold text-white px-2 py-1 hover:text-gray-300 rounded transition-color duration-300" options={options}  value="Fuhrpark" placeholder="Fuhrpark"  />
+                            {/*<Dropdown className="text-sm font-bold text-white px-2 py-1 hover:text-gray-300 rounded transition-color duration-300" options={options}  value="Fuhrpark" placeholder="Fuhrpark"  />*/}
                             <NavItem href="/mitmachen" text="Mitmachen"/>
                             <NavItem href="/fuhrpark" text ="Fuhrpark"/>
                         
